@@ -1,15 +1,35 @@
 # client
 
-To install dependencies:
+This template should help get you started developing with Vue 3 in Vite.
 
-```bash
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
 bun install
 ```
 
-To run:
+### Compile and Hot-Reload for Development
 
-```bash
-bun run index.ts
+```sh
+bun dev
 ```
 
-This project was created using `bun init` in bun v1.1.33. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### Compile and Minify for Production
+
+```sh
+bun build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+bun lint
+```
