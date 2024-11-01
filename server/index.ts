@@ -1,8 +1,13 @@
-const server = Bun.serve({
+import { Hono } from 'hono';
+
+const app = new Hono();
+
+app.get('/', (c) => c.json({ message: 'Hello from Hono!' }));
+app.get('/api/data', (c) => c.json({ data: 'Sample data from API' }));
+
+
+
+export default {
     port: 3000,
-    fetch(request) {
-      return new Response("Welcome to Bun!");
-    },
-  });
-  
-console.log(`Listening on localhost:${server.port}`);
+    fetch: app.fetch,
+}
